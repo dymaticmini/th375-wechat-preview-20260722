@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#eef4f2" />
+  <link rel="icon" href="data:," />
+  <title>柔软与亲水，毛巾后整理不必再做单选题｜TH375系列</title>
+  <style>
+    :root{
+      --green:#13AE67;
+      --green-deep:#08794a;
+      --green-soft:#dff5e9;
+      --blue:#036EB8;
+      --blue-deep:#06496f;
+      --blue-soft:#e4f2fa;
+      --grey:#898989;
+      --ink:#101a20;
+      --muted:#617078;
+      --paper:#ffffff;
+      --mist:#f3f7f6;
+      --ice:#edf6fb;
+      --line:rgba(16,26,32,.12);
+      --shadow:0 26px 76px rgba(11,36,48,.15);
+      --poster-width:390px;
+    }
+    *{box-sizing:border-box}
+    html{background:#dfe8e7;scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"Alibaba PuHuiTi","Alibaba-PuHuiTi","阿里巴巴普惠体","PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 12% 4%,rgba(19,174,103,.10),transparent 23rem),
+        radial-gradient(circle at 88% 18%,rgba(3,110,184,.10),transparent 25rem),
+        #dfe8e7;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    img{display:block;max-width:100%}
+    h1,h2,h3,p{margin-top:0}
+    p{margin-bottom:0;font-size:15px;line-height:1.78;color:#34464e}
+    .poster{width:min(100%,var(--poster-width));margin:0 auto;background:#fff;box-shadow:var(--shadow);overflow:hidden}
+    .section{position:relative;padding:68px 28px;overflow:hidden}
+    .white{background:#fff}
+    .mist{background:var(--mist)}
+    .ice{background:var(--ice)}
+    .chapter{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+    .chapter b{display:grid;place-items:center;width:29px;height:29px;border:1px solid rgba(3,110,184,.22);border-radius:50%;font-size:11px;color:var(--blue);background:rgba(255,255,255,.58)}
+    .chapter span{font-size:12px;font-weight:800;color:var(--blue-deep);letter-spacing:.04em}
+    .chapter small{margin-left:auto;font-size:9px;font-weight:800;color:#8b989e;letter-spacing:.12em;text-transform:uppercase}
+    h1,h2,h3{text-wrap:balance}
+    h2{margin-bottom:17px;font-size:31px;line-height:1.22;letter-spacing:-.04em}
+    h2 em{font-style:normal;color:var(--green-deep)}
+    .intro{font-size:15px;line-height:1.82;color:#45575f}
+    .micro-note{font-size:11px;line-height:1.65;color:#79878d}
+    .rule{width:42px;height:4px;margin:24px 0;background:linear-gradient(90deg,var(--green),var(--blue));border-radius:99px}
+    .tag{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;font-size:10px;font-weight:800;line-height:1.2;color:var(--blue-deep);background:var(--blue-soft)}
+    .logo-white{width:154px;height:auto}
+
+    /* 01 cover */
+    .cover{position:relative;min-height:715px;padding:0;background:#092735;color:#fff}
+    .cover-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 46%}
+    .cover::after{content:"";position:absolute;inset:0;background:
+      linear-gradient(180deg,rgba(3,24,36,.10) 0%,rgba(3,28,42,.18) 38%,rgba(4,27,41,.91) 77%,#071f2b 100%),
+      linear-gradient(90deg,rgba(1,26,38,.55),transparent 72%)}
+    .cover-brand{position:absolute;z-index:2;top:28px;left:24px;right:24px;display:flex;justify-content:space-between;align-items:center}
+    .cover-meta{text-align:right;font-size:9px;line-height:1.55;color:rgba(255,255,255,.72);letter-spacing:.13em}
+    .cover-copy{position:absolute;z-index:2;left:27px;right:27px;bottom:35px}
+    .cover-series{display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;font-size:12px;font-weight:800;color:#b7f0d3}
+    .cover-series::before{content:"";width:28px;height:2px;background:#72e4ac}
+    .cover h1{margin:0 0 18px;font-size:43px;line-height:1.09;letter-spacing:-.058em;text-shadow:0 4px 24px rgba(0,0,0,.2)}
+    .cover h1 span{display:block;color:#9debc5}
+    .cover-deck{max-width:318px;font-size:14.5px;line-height:1.72;color:rgba(255,255,255,.86)}
+    .cover-deck strong{display:block;margin-bottom:3px;color:#fff;font-size:12px;line-height:1.5;letter-spacing:.04em}
+    .cover-facts{display:flex;gap:7px;flex-wrap:wrap;margin-top:24px}
+    .cover-facts span{padding:7px 10px;border:1px solid rgba(255,255,255,.25);border-radius:999px;background:rgba(255,255,255,.08);font-size:10px;font-weight:800;backdrop-filter:blur(5px)}
+    .drop-outline{position:absolute;z-index:2;right:27px;bottom:185px;width:34px;height:47px;border:1px solid rgba(255,255,255,.5);border-radius:58% 42% 58% 42%/64% 43% 57% 36%;transform:rotate(45deg);animation:float 4.2s ease-in-out infinite}
+    @keyframes float{50%{transform:translateY(-8px) rotate(45deg)}}
+
+    /* 02 lead */
+    .lead{padding-top:73px;padding-bottom:0;background:#fff}
+    .lead-claim{font-size:24px;line-height:1.55;font-weight:850;letter-spacing:-.02em}
+    .lead-claim strong{color:var(--green-deep);font-weight:900;box-shadow:inset 0 -6px rgba(19,174,103,.16)}
+    .lead-copy{margin-top:18px}
+    .use-photo{height:276px;margin:34px -28px 0;position:relative;overflow:hidden;background:#e8eeec}
+    .use-photo img{width:100%;height:100%;object-fit:cover;object-position:center}
+    .use-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(4,30,39,.70))}
+    .use-caption{position:absolute;z-index:1;left:28px;right:28px;bottom:21px;color:#fff;font-size:14px;line-height:1.55;font-weight:800}
+    .experience-line{display:grid;grid-template-columns:repeat(3,1fr);margin:0 -28px;background:#0d2e3b;color:#fff}
+    .experience-line div{padding:22px 12px 23px;border-right:1px solid rgba(255,255,255,.12)}
+    .experience-line div:last-child{border-right:0}
+    .experience-line b{display:block;margin-bottom:6px;font-size:12px;color:#9debc5}
+    .experience-line span{font-size:11px;line-height:1.5;color:rgba(255,255,255,.74)}
+
+    /* 03 pain */
+    .pain{padding-bottom:0}
+    .pain-photo{height:310px;margin:30px -28px 0;position:relative;overflow:hidden}
+    .pain-photo img{width:100%;height:100%;object-fit:cover;object-position:center 58%}
+    .pain-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(4,31,43,.84))}
+    .pain-caption{position:absolute;z-index:1;left:28px;right:28px;bottom:24px;color:#fff;font-size:17px;line-height:1.5;font-weight:850;letter-spacing:-.015em}
+    .pain-list{margin:0 -28px;background:#fff}
+    .pain-item{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:23px 28px;border-bottom:1px solid var(--line)}
+    .pain-item:last-child{border-bottom:0}
+    .pain-num{font-size:25px;line-height:1;font-weight:900;color:transparent;-webkit-text-stroke:1px var(--green);padding-top:3px}
+    .pain-item h3{margin:0 0 5px;font-size:17px;line-height:1.3}
+    .pain-item p{font-size:13px;line-height:1.65;color:#59686f}
+
+    /* 04 balance */
+    .balance{background:#fff}
+    .balance-panel{position:relative;margin:32px 0 28px;padding:25px 18px 24px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(19,174,103,.055),rgba(3,110,184,.07));overflow:hidden}
+    .balance-panel::before{content:"";position:absolute;left:50%;top:19px;bottom:19px;width:1px;background:rgba(16,26,32,.12)}
+    .balance-columns{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .balance-side{position:relative;z-index:1}
+    .balance-side:last-child{text-align:right}
+    .balance-side small{display:block;margin-bottom:8px;font-size:10px;font-weight:800;color:#7b8a90;letter-spacing:.08em}
+    .balance-side b{display:block;font-size:19px;line-height:1.3;color:var(--green-deep)}
+    .balance-side:last-child b{color:var(--blue)}
+    .balance-side span{display:block;margin-top:9px;font-size:12.5px;line-height:1.6;color:#596b73}
+    .water-path{position:relative;height:62px;margin:20px 0 4px}
+    .water-path::before{content:"";position:absolute;left:15px;right:15px;top:29px;height:5px;border-radius:99px;background:linear-gradient(90deg,var(--green),#8fd9c1,var(--blue))}
+    .water-path::after{content:"";position:absolute;left:50%;top:50%;width:36px;height:47px;background:#fff;border:4px solid var(--blue);border-radius:58% 42% 58% 42%/64% 43% 57% 36%;transform:translate(-50%,-50%) rotate(45deg);box-shadow:0 8px 24px rgba(3,110,184,.18)}
+    .balance-callout{font-size:19px;line-height:1.55;font-weight:850;color:var(--ink)}
+    .balance-callout em{font-style:normal;color:var(--blue)}
+
+    /* 05 solution */
+    .solution{padding:0;background:#073b4d;color:#fff}
+    .solution-image{position:relative;height:302px;overflow:hidden}
+    .solution-image img{width:100%;height:100%;object-fit:cover;object-position:center}
+    .solution-image::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,37,49,.02),rgba(5,44,56,.86))}
+    .solution-image-label{position:absolute;z-index:1;left:28px;right:28px;bottom:22px;display:flex;justify-content:space-between;align-items:end;color:#fff}
+    .solution-image-label b{font-size:23px;letter-spacing:-.03em}
+    .solution-image-label span{font-size:10px;line-height:1.5;text-align:right;color:rgba(255,255,255,.72)}
+    .solution-copy{padding:54px 28px 62px;background:linear-gradient(145deg,#063a4d,#075c62)}
+    .solution .chapter b{border-color:rgba(255,255,255,.23);color:#b9f0d4;background:rgba(255,255,255,.06)}
+    .solution .chapter span{color:#b9f0d4}
+    .solution .chapter small{color:rgba(255,255,255,.47)}
+    .solution h2{color:#fff}
+    .solution p{color:rgba(255,255,255,.78)}
+    .series-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:29px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.18)}
+    .series-stats div{padding:18px 8px;text-align:center;background:rgba(5,50,62,.72)}
+    .series-stats b{display:block;margin-bottom:3px;font-size:28px;line-height:1;color:#fff}
+    .series-stats span{font-size:11.5px;line-height:1.4;color:rgba(255,255,255,.78)}
+    .series-base{display:flex;align-items:center;gap:9px;margin-top:19px;font-size:12.5px;line-height:1.5;color:#c3ecdf}
+    .series-base::before{content:"";width:22px;height:2px;background:#72e4ac}
+
+    /* 06 products */
+    .products{padding-bottom:70px}
+    .profile-list{margin:30px -28px 0;border-top:1px solid var(--line)}
+    .profile{position:relative;padding:25px 28px;background:#fff;border-bottom:1px solid var(--line);overflow:hidden}
+    .profile:nth-child(even){background:#fbfdfd}
+    .profile::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:var(--accent)}
+    .profile::after{content:"";position:absolute;right:-42px;top:-60px;width:126px;height:126px;border:1px solid var(--soft);border-radius:50%;opacity:.9}
+    .profile-head{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:12px}
+    .profile-code{font-size:31px;line-height:1.1;font-weight:950;letter-spacing:-.035em;color:var(--accent)}
+    .profile-head i{font-style:normal;font-size:10px;color:#829096;letter-spacing:.08em}
+    .profile-role{margin-bottom:7px;font-size:10px;font-weight:850;color:var(--accent);letter-spacing:.08em}
+    .profile h3{margin:0 0 9px;font-size:22px;line-height:1.2;letter-spacing:-.035em}
+    .profile p{max-width:320px;font-size:13px;line-height:1.66;color:#506068}
+    .profile-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:13px}
+    .profile-tags span{padding:5px 8px;border-radius:99px;background:var(--soft);color:var(--accent);font-size:9.5px;font-weight:850}
+    .profile-use{margin-top:13px;padding-top:12px;border-top:1px solid var(--line);font-size:11px;line-height:1.55;color:#65747b}
+    .profile-use b{color:var(--ink)}
+    .product-foot{margin-top:24px;padding:18px 18px;background:#e9f2f0;border-left:4px solid var(--green);font-size:12px;line-height:1.65;color:#4f6268}
+
+    /* 07 mechanism */
+    .mechanism{position:relative;min-height:845px;padding:0;background:#062e42;color:#fff}
+    .mechanism-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+    .mechanism::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,31,48,.10) 4%,rgba(3,33,48,.42) 36%,#052c3e 72%,#052c3e 100%)}
+    .mechanism-copy{position:relative;z-index:1;padding:64px 28px 56px}
+    .mechanism .chapter b{border-color:rgba(255,255,255,.23);color:#b9f0d4;background:rgba(255,255,255,.06)}
+    .mechanism .chapter span{color:#b9f0d4}
+    .mechanism .chapter small{color:rgba(255,255,255,.47)}
+    .mechanism h2{max-width:310px;color:#fff}
+    .mechanism-lead{max-width:315px;font-size:14px;line-height:1.75;color:rgba(255,255,255,.82)}
+    .drop-steps{margin-top:326px;border-top:1px solid rgba(255,255,255,.18)}
+    .drop-step{display:grid;grid-template-columns:42px 1fr;gap:12px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+    .drop-step b{font-size:12px;color:#82e2b3}
+    .drop-step span{font-size:13px;line-height:1.55;color:rgba(255,255,255,.88)}
+    .mechanism-note{margin-top:18px;font-size:10px;line-height:1.6;color:rgba(255,255,255,.55)}
+
+    /* 08 questions */
+    .questions{background:#f3f7f6}
+    .question-list{margin:31px 0 0;border-top:1px solid var(--line)}
+    .question{display:grid;grid-template-columns:45px 1fr;gap:13px;padding:22px 0;border-bottom:1px solid var(--line)}
+    .question b{font-size:28px;line-height:1;color:var(--green-deep)}
+    .question:nth-child(2) b{color:#34776a}
+    .question:nth-child(3) b{color:var(--blue)}
+    .question:nth-child(4) b{color:#526973}
+    .question h3{margin:0 0 5px;font-size:17px;line-height:1.35}
+    .question p{font-size:12.5px;line-height:1.6;color:#66757b}
+    .question-answer{margin-top:25px;padding:21px 18px;background:#102e3a;color:#fff;font-size:15px;line-height:1.7;font-weight:750}
+    .question-answer em{font-style:normal;color:#8ce7bc}
+
+    /* 09 selector */
+    .selector{background:#fff}
+    .selector-headnote{margin-bottom:26px;font-size:13px;line-height:1.65;color:#65747b}
+    .select-table{border-top:2px solid var(--ink)}
+    .select-row{display:grid;grid-template-columns:77px 1fr 88px;align-items:center;min-height:83px;border-bottom:1px solid var(--line)}
+    .select-code{font-size:16.5px;font-weight:950;color:var(--row)}
+    .select-core{padding-right:10px}
+    .select-core b{display:block;margin-bottom:4px;font-size:14px;color:var(--ink)}
+    .select-core span{font-size:10px;color:#74838a}
+    .select-use{font-size:10.5px;line-height:1.45;color:#52646c;text-align:right}
+    .selector-tip{margin-top:24px;padding:20px 18px;background:var(--blue-soft);border-left:4px solid var(--blue);font-size:12.5px;line-height:1.7;color:#445a65}
+    .selector-tip b{color:var(--blue-deep)}
+    .decision{display:grid;gap:12px;margin-top:26px}
+    .decision-step{display:grid;grid-template-columns:31px 1fr;gap:12px;align-items:start}
+    .decision-step b{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;background:var(--ink);color:#fff;font-size:12px}
+    .decision-step span{padding-top:4px;font-size:12px;line-height:1.6;color:#5a6a71}
+
+    /* 10 process */
+    .process{background:var(--ice)}
+    .process-band{margin:29px -28px 0;padding:29px 28px;background:#fff;border-top:1px solid rgba(3,110,184,.12);border-bottom:1px solid rgba(3,110,184,.12)}
+    .process-line{display:grid;grid-template-columns:repeat(4,1fr);position:relative}
+    .process-line::before{content:"";position:absolute;left:10%;right:10%;top:16px;height:2px;background:linear-gradient(90deg,var(--green),var(--blue))}
+    .process-step{position:relative;z-index:1;text-align:center}
+    .process-dot{display:grid;place-items:center;width:34px;height:34px;margin:0 auto 9px;border:3px solid #fff;border-radius:50%;background:var(--ink);color:#fff;font-size:9px;box-shadow:0 0 0 1px rgba(16,26,32,.15)}
+    .process-step:nth-child(3) .process-dot,.process-step:nth-child(4) .process-dot{background:var(--blue)}
+    .process-step span{font-size:10px;line-height:1.45;color:#53666e}
+    .scene-list{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin:29px 0 0;background:rgba(3,110,184,.13);border:1px solid rgba(3,110,184,.13)}
+    .scene{min-height:116px;padding:17px 14px;background:rgba(255,255,255,.86)}
+    .scene b{display:block;margin-bottom:7px;font-size:12px;color:var(--blue-deep)}
+    .scene span{font-size:10.5px;line-height:1.55;color:#62747c}
+    .process .micro-note{margin-top:19px}
+
+    /* 11 contact */
+    .close{padding-top:72px;padding-bottom:70px;background:
+      radial-gradient(circle at 92% 5%,rgba(19,174,103,.11),transparent 14rem),
+      #fff;color:var(--ink)}
+    .close h2{font-size:33px;color:var(--ink)}
+    .close h2 em{color:var(--green-deep)}
+    .close-intro{color:#51636b}
+    .close-statement{margin:29px 0 23px;padding:22px 20px;border-left:4px solid var(--green);background:#0d2e3b;font-size:19px;line-height:1.55;font-weight:850;color:#fff}
+    .sample-line{display:flex;align-items:center;gap:9px;font-size:11px;font-weight:800;color:var(--green-deep)}
+    .sample-line::before{content:"";width:25px;height:2px;background:linear-gradient(90deg,var(--green),var(--blue))}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:31px}
+    .contact{padding:14px 10px 16px;border:1px solid var(--line);background:var(--mist);color:var(--ink);text-align:center}
+    .contact img{width:100%;aspect-ratio:1/1;object-fit:contain;margin:0 auto 11px;background:#fff}
+    .contact b{display:block;font-size:10px;color:#63737a;line-height:1.4}
+    .contact span{display:block;margin-top:5px;font-size:16px;font-weight:900}
+    .contact strong{display:block;margin-top:3px;font-size:11px;color:var(--blue-deep);letter-spacing:.02em}
+    .legal{margin-top:22px;font-size:9px;line-height:1.65;color:#829097}
+
+    /* 12 brand ending */
+    .brand-ending{position:relative;min-height:720px;padding:60px 28px 42px;background:#0a171d;color:#fff;overflow:hidden}
+    .brand-ending::before,.brand-ending::after{content:"";position:absolute;border:1px solid rgba(255,255,255,.12);border-radius:50%;pointer-events:none}
+    .brand-ending::before{right:-148px;bottom:-92px;width:410px;height:410px;border-color:rgba(19,174,103,.25)}
+    .brand-ending::after{right:-79px;bottom:-25px;width:270px;height:270px;border-color:rgba(3,110,184,.30)}
+    .brand-ending-inner{position:relative;z-index:1;min-height:618px;display:flex;flex-direction:column}
+    .brand-ending-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+    .brand-ending-logo{width:145px;height:auto;filter:brightness(0) invert(1)}
+    .brand-ending-no{padding-top:3px;font-size:9px;color:rgba(255,255,255,.48);letter-spacing:.14em}
+    .brand-rule{display:flex;width:78px;height:3px;margin-top:62px}
+    .brand-rule i{width:54px;background:var(--green)}
+    .brand-rule b{flex:1;background:var(--blue)}
+    .brand-product{margin-top:28px}
+    .brand-product span{display:block;color:#72dfaa;font-size:14px;font-weight:800;letter-spacing:.05em}
+    .brand-product strong{display:block;margin-top:6px;font-size:30px;line-height:1.12;letter-spacing:-.03em;color:#fff}
+    .brand-ending h3{margin:32px 0 0;max-width:330px;font-size:34px;line-height:1.22;letter-spacing:-.04em;color:#fff}
+    .brand-ending h3 span{color:rgba(255,255,255,.58)}
+    .brand-ending-copy{max-width:315px;margin-top:20px;font-size:15px;line-height:1.72;color:rgba(255,255,255,.72)}
+    .brand-ending-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+    .brand-ending-tags span{padding:8px 10px;border:1px solid rgba(255,255,255,.18);font-size:11px;color:rgba(255,255,255,.8)}
+    .cert-wrap{margin-top:auto;padding-top:38px}
+    .cert-strip{width:100%;height:auto;filter:brightness(0) invert(1);opacity:.8}
+
+
+
+    /* V5 editorial and WeChat long-image optimization */
+    :root{--safe-x:24px}
+    p{font-size:16px;line-height:1.76}
+    .section{padding:72px var(--safe-x)}
+    .chapter{margin-bottom:20px}
+    .chapter b{width:31px;height:31px;font-size:11.5px}
+    .chapter span{font-size:12.5px}
+    .chapter small{font-size:10.5px}
+    h2{font-size:32px;line-height:1.2}
+    .intro{font-size:16px;line-height:1.76}
+    .micro-note{font-size:11.8px;line-height:1.68}
+    .tag{font-size:11.5px}
+
+    .use-photo,.experience-line,.pain-photo,.pain-list,.profile-list{margin-left:calc(var(--safe-x) * -1);margin-right:calc(var(--safe-x) * -1)}
+    .use-caption,.pain-caption,.solution-image-label{left:var(--safe-x);right:var(--safe-x)}
+    .pain-item,.profile{padding-left:var(--safe-x);padding-right:var(--safe-x)}
+    .solution-copy,.mechanism-copy{padding-left:var(--safe-x);padding-right:var(--safe-x)}
+    .profile p{font-size:15px;line-height:1.68}
+    .profile-role,.profile-head i{font-size:11px}
+    .profile-tags span{font-size:11px;padding:6px 9px}
+    .profile-use{font-size:13px;line-height:1.62}
+    .product-foot{font-size:13.5px;line-height:1.68}
+    .experience-line b{font-size:13px}.experience-line span{font-size:12px}
+    .pain-item p{font-size:14px}.pain-item h3{font-size:18px}
+
+    /* 01 stronger cover */
+    .cover{min-height:760px;background:#071f2b}
+    .cover-photo{object-position:center 40%}
+    .cover::before{content:"";position:absolute;z-index:1;inset:0;background:linear-gradient(135deg,rgba(19,174,103,.18),transparent 31%,rgba(3,110,184,.12) 72%,transparent)}
+    .cover::after{background:linear-gradient(180deg,rgba(0,17,27,.14) 0%,rgba(0,18,29,.03) 34%,rgba(3,24,36,.38) 62%,#051b27 100%),linear-gradient(90deg,rgba(1,22,33,.64) 0%,rgba(1,22,33,.18) 62%,transparent 100%)}
+    .cover-brand{top:26px;left:var(--safe-x);right:var(--safe-x)}
+    .logo-white{width:160px}
+    .cover-meta{font-size:10px;line-height:1.55}
+    .cover-signal{position:absolute;z-index:2;top:104px;left:var(--safe-x);display:flex;width:80px;height:4px}
+    .cover-signal i{width:56px;background:var(--green)}.cover-signal b{flex:1;background:#55b9ef}
+    .cover-copy{left:var(--safe-x);right:var(--safe-x);bottom:48px}
+    .cover-series{margin-bottom:17px;font-size:12.5px;color:#c8f5de}
+    .cover-series::before{display:none}
+    .cover h1{margin:0;font-size:unset;line-height:1;text-shadow:0 5px 28px rgba(0,0,0,.32)}
+    .cover h1 small{display:block;margin-bottom:10px;font-size:22px;line-height:1.15;font-weight:700;letter-spacing:-.025em;color:rgba(255,255,255,.9)}
+    .cover h1 strong{display:block;font-size:57px;line-height:.98;font-weight:950;letter-spacing:-.05em;color:#fff}
+    .cover h1 em{display:inline-block;margin-top:6px;font-style:normal;color:#8ce7bc}
+    .cover-proof{display:flex;align-items:center;width:max-content;margin-top:26px;border:1px solid rgba(255,255,255,.26);background:rgba(4,28,39,.55);backdrop-filter:blur(7px)}
+    .cover-proof b,.cover-proof span{padding:10px 13px;font-size:12px;line-height:1.2}
+    .cover-proof b{color:#071f2b;background:#8ce7bc}.cover-proof span{color:#fff}
+
+    /* 07 mechanism: image plus readable moving path */
+    .mechanism{min-height:980px}
+    .mechanism-photo{object-position:center top}
+    .mechanism::after{background:linear-gradient(180deg,rgba(2,25,39,.12) 0%,rgba(3,31,45,.32) 29%,rgba(4,40,56,.76) 53%,#052c3e 76%,#052c3e 100%)}
+    .mechanism-copy{padding-top:68px;padding-bottom:60px}
+    .mechanism h2{max-width:330px;font-size:35px}
+    .mechanism-lead{max-width:330px;font-size:15.5px;line-height:1.72;color:rgba(255,255,255,.86)}
+    .mechanism-journey{position:relative;height:204px;margin-top:224px;border:1px solid rgba(255,255,255,.16);background:rgba(2,35,49,.54);backdrop-filter:blur(5px);overflow:hidden}
+    .mechanism-journey svg{width:100%;height:100%}
+    .route-shadow,.route-line{fill:none;stroke-linecap:round}
+    .route-shadow{stroke:rgba(255,255,255,.14);stroke-width:8}.route-line{stroke:url(#routeGradient);stroke-width:2.2;stroke-dasharray:5 8}
+    .route-node{fill:#052c3e;stroke:#9debc5;stroke-width:2.4}
+    .journey-label{position:absolute;padding:5px 8px;border-radius:99px;background:#fff;color:#075c62;font-size:11px;font-weight:900}
+    .label-contact{left:8px;top:9px}.label-wet{left:128px;top:74px}.label-enter{right:5px;bottom:6px}
+    .drop-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:18px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.16)}
+    .drop-step{display:block;min-height:94px;padding:15px 11px;border:0;background:rgba(3,36,49,.82)}
+    .drop-step b{display:block;margin-bottom:8px;font-size:13px}.drop-step span{font-size:12px;line-height:1.5}
+    .mechanism-note{font-size:11.5px;line-height:1.65;color:rgba(255,255,255,.63)}
+
+    /* 08 visual four-check system */
+    .questions{background:linear-gradient(180deg,#f4f8f7,#edf4f2)}
+    .questions-intro{font-size:15.5px;line-height:1.7;color:#54666d}
+    .values-orbit{position:relative;height:278px;margin:25px -6px 14px}
+    .values-orbit svg{position:absolute;inset:0;width:100%;height:100%}
+    .orbit-center{position:absolute;left:50%;top:50%;display:grid;place-items:center;width:112px;height:112px;transform:translate(-50%,-50%);border-radius:50%;background:#0c2f3c;color:#fff;box-shadow:0 18px 38px rgba(9,48,62,.17)}
+    .orbit-center small{font-size:11px;color:#91d9bc}.orbit-center b{margin-top:-19px;font-size:21px}
+    .orbit-node{position:absolute;display:grid;place-items:center;width:68px;height:68px;border:1px solid rgba(3,110,184,.17);border-radius:50%;background:#fff;box-shadow:0 9px 24px rgba(19,57,70,.09)}
+    .orbit-node b{font-size:23px;line-height:1;color:var(--green-deep)}.orbit-node span{margin-top:-10px;font-size:10.5px;color:#6d7e84}
+    .node-soft{left:50%;top:2px;transform:translateX(-50%)}.node-loft{left:2px;top:50%;transform:translateY(-50%)}.node-water{right:2px;top:50%;transform:translateY(-50%)}.node-stable{left:50%;bottom:2px;transform:translateX(-50%)}
+    .node-water b{color:var(--blue)}.node-stable b{color:#526973}.node-loft b{color:#34776a}
+    .orbit-pulse{transform-origin:center;animation:orbitPulse 3.8s ease-out infinite}
+    @keyframes orbitPulse{0%,18%{transform:scale(.82);opacity:.38}72%,100%{transform:scale(1.42);opacity:0}}
+    .question-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:26px 0 0;border:0}
+    .question{display:block;min-height:184px;padding:17px 15px;border:1px solid rgba(16,26,32,.09);background:#fff}
+    .question>b{display:block;margin-bottom:13px;font-size:27px}.question h3{font-size:15.5px;line-height:1.42}.question p{font-size:13.5px;line-height:1.62}
+    .question-answer{margin-top:18px;padding:21px 19px;font-size:15px;line-height:1.72}
+
+    /* 09 selection made visual and mobile-readable */
+    .selector-headnote{font-size:15px;line-height:1.68}
+    .texture-directions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:25px 0 10px}
+    .texture-card{min-height:142px;padding:13px;background:var(--wash);border-top:4px solid var(--tone);overflow:hidden}
+    .texture-card svg{width:100%;height:71px}.texture-card path{fill:none;stroke:var(--tone);stroke-width:4;stroke-linecap:round;opacity:.78}
+    .texture-card div{display:flex;align-items:baseline;justify-content:space-between;margin-top:5px}.texture-card b{font-size:15px;color:var(--tone)}.texture-card span{font-size:12px;font-weight:800;color:#52636a}
+    .texture-note{margin-bottom:28px;font-size:12px;line-height:1.62;color:#6f7f86}
+    .select-table{border-top:2px solid var(--ink)}
+    .select-row{display:grid;grid-template-columns:82px 1fr;align-items:start;min-height:108px;padding:18px 0}
+    .select-code{grid-row:1/3;font-size:17.5px;padding-top:1px}.select-core{padding:0}.select-core b{font-size:15px}.select-core span{font-size:11.5px}
+    .select-use{grid-column:2;text-align:left;margin-top:7px;font-size:13.5px;line-height:1.55;color:#4c6069}
+    .selector-tip{font-size:14px;line-height:1.72}
+    .decision-step span{font-size:14px;line-height:1.62}.decision-step b{font-size:12.5px}
+
+    /* 10 real sampling image and animated process */
+    .sample-photo{position:relative;height:270px;margin:30px calc(var(--safe-x) * -1) 0;overflow:hidden;background:#dfe8e7}
+    .sample-photo img{width:100%;height:100%;object-fit:cover;object-position:center 50%}
+    .sample-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,24,34,.02) 36%,rgba(4,31,43,.84) 100%)}
+    .sample-photo-label{position:absolute;z-index:1;left:var(--safe-x);right:var(--safe-x);bottom:21px;color:#fff}
+    .sample-photo-label small{display:block;margin-bottom:5px;font-size:10px;letter-spacing:.12em;color:#9debc5}.sample-photo-label b{display:block;font-size:24px;line-height:1.2}.sample-photo-label span{display:block;margin-top:5px;font-size:13px;color:rgba(255,255,255,.78)}
+    .process-band{margin:0 calc(var(--safe-x) * -1);padding:32px var(--safe-x);position:relative}
+    .process-line::after{content:"";position:absolute;z-index:2;left:9%;top:11px;width:12px;height:12px;border:3px solid #fff;border-radius:50%;background:var(--green);box-shadow:0 0 0 2px rgba(19,174,103,.22);animation:processMove 5.6s ease-in-out infinite}
+    @keyframes processMove{0%,8%{left:9%;background:var(--green)}33%{left:34%}58%{left:60%;background:#078aa1}83%,100%{left:86%;background:var(--blue)}}
+    .process-step span{font-size:11.5px;line-height:1.5}.process-dot{font-size:10px}
+    .application-head{display:flex;align-items:center;justify-content:space-between;margin-top:34px}.application-head b{font-size:18px}.application-head span{font-size:10.5px;letter-spacing:.1em;color:#7b898f}
+    .scene-list{gap:10px;margin-top:16px;background:none;border:0}
+    .scene{display:grid;grid-template-columns:36px 1fr;gap:10px;min-height:132px;padding:16px 12px;border:1px solid rgba(3,110,184,.13);background:rgba(255,255,255,.88)}
+    .scene i{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--blue-soft);color:var(--blue-deep);font-style:normal;font-size:13px;font-weight:900}
+    .scene b{font-size:13.5px;line-height:1.4}.scene span{font-size:13px;line-height:1.58;color:#4e6169}
+    .process .micro-note{margin-top:22px}
+
+    /* close and brand ending readability */
+    .close{padding-left:var(--safe-x);padding-right:var(--safe-x)}
+    .close-intro{font-size:15.5px;line-height:1.74}
+    .sample-line{font-size:12.5px}.contact b{font-size:11.8px}.contact strong{font-size:12.5px}.legal{font-size:11.8px;line-height:1.68}
+    .brand-ending{padding-left:var(--safe-x);padding-right:var(--safe-x)}
+    .brand-ending-no{font-size:10.5px}.brand-ending-tags span{font-size:12px}
+
+        @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important}}
+    @media (min-width:720px){body{padding:34px 0}.poster{border-radius:3px}}
+  </style>
+</head>
+<body>
+<main class="poster" aria-label="TH375系列亲水硅油毛巾后整理解决方案">
+  <section class="cover" data-segment="01-cover">
+    <img class="cover-photo" src="assets/generated/06-hero-impact-water-towel.png" alt="水滴进入白色毛巾毛圈的视觉场景" />
+    <div class="cover-brand">
+      <img class="logo-white" src="assets/source-media/dymatic-silicone-logo-white-official.png" alt="德美有机硅" />
+      <div class="cover-meta">TOWEL FINISHING<br/>TH375 SERIES</div>
+    </div>
+    <div class="cover-signal" aria-hidden="true"><i></i><b></b></div>
+    <div class="cover-copy">
+      <div class="cover-series">TH375系列 · 毛巾专用亲水硅油</div>
+      <h1><small>摸起来要软</small><strong>用起来<br/><em>要吸水</em></strong></h1>
+      <div class="cover-proof"><b>4款产品</b><span>4种手感方向</span></div>
+    </div>
+  </section>
+
+  <section class="section lead" data-segment="02-lead">
+    <div class="chapter"><b>01</b><span>从使用开始</span><small>REAL USE</small></div>
+    <div class="lead-claim">真正的使用体验，<strong>发生在水落下之后。</strong></div>
+    <p class="lead-copy">触感够不够细腻、毛圈是否饱满，水分接触后能不能顺利进入织物——这些感受，用户会在一次擦拭里同时得到答案。</p>
+    <div class="use-photo">
+      <img src="assets/generated/05-use-moment-hands-towel.png" alt="湿润双手正在接触柔软的白色毛巾" />
+      <div class="use-caption">后整理的价值，最终要落到每一次触摸与擦拭。</div>
+    </div>
+    <div class="experience-line">
+      <div><b>摸</b><span>柔软细腻<br/>不干涩刺肤</span></div>
+      <div><b>看</b><span>毛圈饱满<br/>成品质感清楚</span></div>
+      <div><b>用</b><span>水分润湿<br/>保持亲水体验</span></div>
+    </div>
+  </section>
+
+  <section class="section mist pain" data-segment="03-pain-point">
+    <div class="chapter"><b>02</b><span>问题在哪里</span><small>PAIN POINTS</small></div>
+    <h2>毛巾后整理的难题<br/>往往会<em>一起出现</em></h2>
+    <p class="intro">做出柔软手感并不难。真正难的是，手感做到了，毛圈、亲水和缸内运行也不能掉队。</p>
+    <div class="pain-photo">
+      <img src="assets/generated/02-pain-beading-flat-towel.png" alt="水滴停留在较扁毛圈表面" />
+      <div class="pain-caption">如果水滴停在表面，手感再软，使用体验仍会打折。</div>
+    </div>
+    <div class="pain-list">
+      <div class="pain-item"><div class="pain-num">01</div><div><h3>手感干涩</h3><p>原坯涩感与刺肤感明显，难以匹配细腻、亲肤的产品定位。</p></div></div>
+      <div class="pain-item"><div class="pain-num">02</div><div><h3>毛圈扁塌</h3><p>毛圈立体感和视觉厚度不足，成品容易显得单薄。</p></div></div>
+      <div class="pain-item"><div class="pain-num">03</div><div><h3>亲水不理想</h3><p>做软之后，水分与纤维表面的接触、润湿仍需要被关注。</p></div></div>
+      <div class="pain-item"><div class="pain-num">04</div><div><h3>运行有波动</h3><p>剪切、配伍和长时间循环条件，会影响大货加工的连续性与一致性。</p></div></div>
+    </div>
+  </section>
+
+  <section class="section balance" data-segment="04-balance">
+    <div class="chapter"><b>03</b><span>找到平衡</span><small>BALANCE</small></div>
+    <h2>做出手感<br/>也要<em>留住水路</em></h2>
+    <p class="intro">亲水型后整理同时看两件事：目标手感是否做到位，水分能否接触、铺展并进入毛圈。</p>
+    <div class="balance-panel" aria-label="柔软手感与亲水通道平衡示意">
+      <div class="balance-columns">
+        <div class="balance-side"><small>HAND FEEL</small><b>改变纤维触感</b><span>获得顺滑、软糯或蓬松等目标手感</span></div>
+        <div class="balance-side"><small>WATER PATH</small><b>保留润湿通道</b><span>让水分仍能接触、铺展并进入毛圈结构</span></div>
+      </div>
+      <div class="water-path" aria-hidden="true"></div>
+    </div>
+    <div class="balance-callout">每块织物都有自己的平衡点：目标手感、毛圈状态和<em>亲水表现</em>需要一起验证。</div>
+    <p class="micro-note" style="margin-top:19px">不同纤维、毛圈结构、前处理状态与工艺条件都会影响结果，正式应用前应结合实际织物打样确认。</p>
+  </section>
+
+  <section class="solution" data-segment="05-solution">
+    <div class="solution-image">
+      <img src="assets/generated/03-series-four-towel-textures.png" alt="四种不同毛圈质感的白色毛巾" />
+      <div class="solution-image-label"><b>TH375 SERIES</b><span>ONE SERIES<br/>FOUR PROFILES</span></div>
+    </div>
+    <div class="solution-copy">
+      <div class="chapter"><b>04</b><span>系列出场</span><small>THE SOLUTION</small></div>
+      <h2>四款产品<br/>对应四种<em style="color:#8ce7bc">手感方向</em></h2>
+      <p>德美TH375系列由四款毛巾专用亲水硅油组成。四款产品均适用于缸中浸渍工艺，分别突出顺滑、软糯、均衡与蓬松，便于按成品定位展开选型。</p>
+      <div class="series-stats">
+        <div><b>4</b><span>款系列产品</span></div>
+        <div><b>4</b><span>种手感方向</span></div>
+        <div><b>1</b><span>套缸中方案</span></div>
+      </div>
+      <div class="series-base">共同关注：柔软 · 蓬松 · 亲水 · 生产稳定性</div>
+    </div>
+  </section>
+
+  <section class="section mist products" data-segment="06-products">
+    <div class="chapter"><b>05</b><span>四款怎么选</span><small>PRODUCT PROFILES</small></div>
+    <h2>不是用一种柔软<br/>覆盖所有毛巾</h2>
+    <p class="intro">先看成品定位和目标质感，再决定手感重点放在哪里。</p>
+    <div class="profile-list">
+      <article class="profile" style="--accent:#0b9860;--soft:#e2f5eb">
+        <div class="profile-head"><div class="profile-code">TH375E</div><i>01 / 04</i></div>
+        <div class="profile-role">基础柔软方案</div>
+        <h3>柔软顺滑</h3>
+        <p>自然棉感，柔软中兼有顺滑与适度蓬松。资料重点涵盖亲水影响、耐剪切、配伍性与低黄变定位。</p>
+        <div class="profile-tags"><span>顺滑</span><span>适度蓬松</span><span>低黄变定位</span></div>
+        <div class="profile-use"><b>更适合：</b>酒店常规浴巾、方巾、纯棉毛巾及批量流通款毛圈织物。</div>
+      </article>
+      <article class="profile" style="--accent:#b76550;--soft:#faebe7">
+        <div class="profile-head"><div class="profile-code">TH375G</div><i>02 / 04</i></div>
+        <div class="profile-role">细腻亲肤方案</div>
+        <h3>细腻软糯</h3>
+        <p>触感绵密软糯，针对毛巾干硬、刺肤等手感问题；资料同时关注亲水保持与乳液稳定。</p>
+        <div class="profile-tags"><span>绵密</span><span>软糯</span><span>亲水保持</span></div>
+        <div class="profile-use"><b>更适合：</b>家用洁面巾、贴身全棉毛圈及母婴基础款毛巾。</div>
+      </article>
+      <article class="profile" style="--accent:#036EB8;--soft:#e5f1f9">
+        <div class="profile-head"><div class="profile-code">TH375T</div><i>03 / 04</i></div>
+        <div class="profile-role">软蓬平衡方案</div>
+        <h3>软蓬均衡</h3>
+        <p>柔软与蓬松更均衡，兼顾毛圈外观和亲水表现；也可与其他类型硅油复配，调节手感风格。</p>
+        <div class="profile-tags"><span>综合均衡</span><span>缸用稳定</span><span>可复配调节</span></div>
+        <div class="profile-use"><b>更适合：</b>全品类通用；手感方向尚未确定时，可先作为打样起点。</div>
+      </article>
+      <article class="profile" style="--accent:#9c7426;--soft:#f7efde">
+        <div class="profile-head"><div class="profile-code">TH375P</div><i>04 / 04</i></div>
+        <div class="profile-role">厚实蓬松方案</div>
+        <h3>饱满蓬松</h3>
+        <p>强调毛圈支撑与视觉厚度，形成更饱满的蓬松感，同时兼顾柔软和亲水表现。</p>
+        <div class="profile-tags"><span>毛圈支撑</span><span>视觉厚度</span><span>柔软亲水</span></div>
+        <div class="profile-use"><b>更适合：</b>高端加厚浴巾、礼盒毛巾及高克重母婴毛巾、毛圈织物。</div>
+      </article>
+    </div>
+    <div class="product-foot">TH375E的低黄变定位适合白色及浅色毛巾，但颜色、手感和亲水表现仍应以实际织物打样为准。</div>
+  </section>
+
+  <section class="mechanism" data-segment="07-mechanism">
+    <img class="mechanism-photo" src="assets/generated/04-hydrophilic-fiber-mechanism.png" alt="水分沿开放纤维间隙进入毛圈的概念示意" />
+    <div class="mechanism-copy">
+      <div class="chapter"><b>06</b><span>跟着一滴水</span><small>ONE DROP</small></div>
+      <h2>水分如何进入<br/>柔软的毛圈？</h2>
+      <p class="mechanism-lead">水先接触毛圈，再沿纤维间隙铺开，继续向内部进入。TH375系列关注的，是获得手感的同时，不把这条“水路”关住。</p>
+      <div class="mechanism-journey" aria-label="水滴接触、润湿并进入毛圈的过程示意">
+        <svg viewBox="0 0 330 184" role="img" aria-hidden="true">
+          <defs>
+            <linearGradient id="routeGradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#8ce7bc"/><stop offset="1" stop-color="#5ec9ff"/>
+            </linearGradient>
+            <filter id="routeGlow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          </defs>
+          <path class="route-shadow" d="M28 34 C86 22 102 76 150 84 S219 76 247 116 S278 152 304 151"/>
+          <path id="waterRoute" class="route-line" d="M28 34 C86 22 102 76 150 84 S219 76 247 116 S278 152 304 151"/>
+          <circle class="route-node" cx="28" cy="34" r="8"/><circle class="route-node" cx="150" cy="84" r="8"/><circle class="route-node" cx="304" cy="151" r="8"/>
+          <g class="route-drop" filter="url(#routeGlow)">
+            <path d="M0 -12 C7 -4 10 1 10 7 A10 10 0 1 1 -10 7 C-10 1 -7 -4 0 -12Z" fill="url(#routeGradient)"/>
+            <animateMotion dur="5.2s" repeatCount="indefinite" rotate="auto"><mpath href="#waterRoute"/></animateMotion>
+          </g>
+        </svg>
+        <span class="journey-label label-contact">接触</span>
+        <span class="journey-label label-wet">润湿</span>
+        <span class="journey-label label-enter">进入</span>
+      </div>
+      <div class="drop-steps">
+        <div class="drop-step"><b>01</b><span>水滴到达毛圈表面</span></div>
+        <div class="drop-step"><b>02</b><span>沿纤维间隙铺展</span></div>
+        <div class="drop-step"><b>03</b><span>继续进入毛圈结构</span></div>
+      </div>
+      <div class="mechanism-note">图示为传播性概念示意，不代表产品化学结构。实际效果受织物结构、前处理与后整理工艺影响。</div>
+    </div>
+  </section>
+
+  <section class="section questions" data-segment="08-four-values">
+    <div class="chapter"><b>07</b><span>回到四个问题</span><small>FOUR CHECKS</small></div>
+    <h2>一块好毛巾<br/>不只摸着软</h2>
+    <p class="questions-intro">选型时，把手感、毛圈、亲水和加工稳定性放在一起看。</p>
+    <div class="values-orbit" aria-label="柔、蓬、水、稳四项判断维度">
+      <svg viewBox="0 0 340 270" aria-hidden="true">
+        <defs><linearGradient id="orbitGradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#13AE67"/><stop offset="1" stop-color="#036EB8"/></linearGradient></defs>
+        <circle cx="170" cy="135" r="83" fill="none" stroke="url(#orbitGradient)" stroke-width="1.5" stroke-dasharray="4 8" opacity=".62"/>
+        <circle class="orbit-pulse" cx="170" cy="135" r="56" fill="none" stroke="#13AE67" stroke-width="1.3" opacity=".24"/>
+        <path d="M170 52V87M87 135H122M218 135H253M170 183V218" stroke="#6cae9c" stroke-width="1.2" opacity=".72"/>
+      </svg>
+      <div class="orbit-center"><small>一块</small><b>好毛巾</b></div>
+      <div class="orbit-node node-soft"><b>柔</b><span>手感</span></div>
+      <div class="orbit-node node-loft"><b>蓬</b><span>毛圈</span></div>
+      <div class="orbit-node node-water"><b>水</b><span>润湿</span></div>
+      <div class="orbit-node node-stable"><b>稳</b><span>运行</span></div>
+    </div>
+    <div class="question-list">
+      <div class="question"><b>柔</b><div><h3>触感是否贴合定位？</h3><p>从基础柔软到细腻软糯，目标要先说清楚。</p></div></div>
+      <div class="question"><b>蓬</b><div><h3>毛圈是否有支撑？</h3><p>看蓬松度，也看视觉厚度与成品风格。</p></div></div>
+      <div class="question"><b>水</b><div><h3>做软后能否润湿？</h3><p>观察水分与织物表面的接触和进入状态。</p></div></div>
+      <div class="question"><b>稳</b><div><h3>工艺是否便于控制？</h3><p>把剪切、配伍和循环条件一起纳入验证。</p></div></div>
+    </div>
+    <div class="question-answer">四款产品各有侧重，选型最终落在两件事：<em>目标手感，以及现场工艺能否承接</em>。</div>
+  </section>
+
+  <section class="section selector" data-segment="09-selector">
+    <div class="chapter"><b>08</b><span>快速选型</span><small>SELECTION</small></div>
+    <h2>先定毛巾风格<br/>再选产品方向</h2>
+    <p class="selector-headnote">四款产品不是高低等级，而是四种不同的手感取向。</p>
+    <div class="texture-directions" aria-label="四款产品手感方向示意">
+      <div class="texture-card" style="--tone:#0b9860;--wash:#e4f7ee">
+        <svg viewBox="0 0 150 72" aria-hidden="true"><path d="M7 63Q7 13 29 13T51 63M42 63Q42 24 61 24T80 63M72 63Q72 7 97 7T122 63M111 63Q111 29 128 29T145 63"/></svg>
+        <div><b>TH375E</b><span>顺滑</span></div>
+      </div>
+      <div class="texture-card" style="--tone:#b76550;--wash:#f7ece8">
+        <svg viewBox="0 0 150 72" aria-hidden="true"><path d="M7 63Q7 22 26 22T45 63M38 63Q38 12 61 12T84 63M75 63Q75 20 95 20T115 63M108 63Q108 9 132 9T145 63"/></svg>
+        <div><b>TH375G</b><span>软糯</span></div>
+      </div>
+      <div class="texture-card" style="--tone:#036EB8;--wash:#e8f3fa">
+        <svg viewBox="0 0 150 72" aria-hidden="true"><path d="M7 63Q7 16 28 16T49 63M40 63Q40 16 61 16T82 63M73 63Q73 16 94 16T115 63M106 63Q106 16 127 16T145 63"/></svg>
+        <div><b>TH375T</b><span>均衡</span></div>
+      </div>
+      <div class="texture-card" style="--tone:#9c7426;--wash:#f7f0df">
+        <svg viewBox="0 0 150 72" aria-hidden="true"><path d="M7 63Q7 6 32 6T57 63M45 63Q45 2 72 2T99 63M87 63Q87 6 112 6T137 63"/></svg>
+        <div><b>TH375P</b><span>蓬松</span></div>
+      </div>
+    </div>
+    <p class="texture-note">四款手感方向示意，不代表量化等级。</p>
+    <div class="select-table">
+      <div class="select-row" style="--row:#0b9860"><div class="select-code">TH375E</div><div class="select-core"><b>柔软顺滑</b><span>基础柔软方向</span></div><div class="select-use">酒店、流通及常规毛巾</div></div>
+      <div class="select-row" style="--row:#b76550"><div class="select-code">TH375G</div><div class="select-core"><b>细腻软糯</b><span>细腻亲肤方向</span></div><div class="select-use">洁面、贴身及母婴基础款</div></div>
+      <div class="select-row" style="--row:#036EB8"><div class="select-code">TH375T</div><div class="select-core"><b>软蓬均衡</b><span>综合通用方向</span></div><div class="select-use">全品类打样与试样起点</div></div>
+      <div class="select-row" style="--row:#9c7426"><div class="select-code">TH375P</div><div class="select-core"><b>饱满蓬松</b><span>高端蓬松方向</span></div><div class="select-use">加厚、礼盒及高克重毛巾</div></div>
+    </div>
+    <div class="selector-tip"><b>手感方向还没定？</b><br/>可先从TH375T展开打样，再根据成品目标向顺滑、软糯或蓬松方向调整。</div>
+    <div class="decision">
+      <div class="decision-step"><b>1</b><span><strong>看织物：</strong>毛圈结构、克重、纤维和前处理状态。</span></div>
+      <div class="decision-step"><b>2</b><span><strong>定风格：</strong>明确顺滑、软糯、均衡或蓬松的优先级。</span></div>
+      <div class="decision-step"><b>3</b><span><strong>做验证：</strong>结合浴比、设备和后续烘干条件打样。</span></div>
+    </div>
+  </section>
+
+  <section class="section process" data-segment="10-process">
+    <div class="chapter"><b>09</b><span>工艺与应用</span><small>SAMPLE FIRST</small></div>
+    <h2>先做一块小样<br/>再谈稳定大货</h2>
+    <p class="intro">先把织物状态与目标手感说清楚，再做选型、上柔和验证。</p>
+    <div class="sample-photo">
+      <img src="assets/generated/07-sampling-lab-towel-swatches.png" alt="实验室内对四种白色毛巾小样进行滴水与手感评估" />
+      <div class="sample-photo-label"><small>FROM SAMPLE TO BULK</small><b>从小样开始</b><span>看手感，也看亲水</span></div>
+    </div>
+    <div class="process-band">
+      <div class="process-line">
+        <div class="process-step"><div class="process-dot">01</div><span>确认<br/>织物状态</span></div>
+        <div class="process-step"><div class="process-dot">02</div><span>确定<br/>手感目标</span></div>
+        <div class="process-step"><div class="process-dot">03</div><span>缸中<br/>浸渍上柔</span></div>
+        <div class="process-step"><div class="process-dot">04</div><span>评估<br/>手感亲水</span></div>
+      </div>
+    </div>
+    <div class="application-head"><b>不同毛巾，不同关注点</b><span>APPLICATION</span></div>
+    <div class="scene-list">
+      <div class="scene"><i>酒</i><div><b>酒店及流通毛巾</b><span>关注常规柔软、顺滑与生产连续性。</span></div></div>
+      <div class="scene"><i>洁</i><div><b>家用洁面毛巾</b><span>突出细腻、亲肤和亲水体验。</span></div></div>
+      <div class="scene"><i>婴</i><div><b>母婴毛巾</b><span>按产品定位选择软糯或蓬松方向。</span></div></div>
+      <div class="scene"><i>浴</i><div><b>高端加厚浴巾</b><span>看毛圈支撑、视觉厚度和综合质感。</span></div></div>
+    </div>
+    <p class="micro-note">具体用量、pH、温度、浴比与处理时间，请以正式产品技术资料和现场试验为准。</p>
+  </section>
+
+  <section class="section close" data-segment="11-brand-close">
+    <div class="chapter"><b>10</b><span>开始试样</span><small>CONTACT</small></div>
+    <h2>从一块小样开始<br/>把<em>手感说清楚</em></h2>
+    <p class="close-intro">带上毛巾结构、克重、目标手感与设备条件，与德美团队沟通初步选型和试样方向。</p>
+    <div class="close-statement">四种手感方向<br/>一套毛巾亲水后整理解决方案</div>
+    <div class="sample-line">欢迎咨询产品、选型与试样</div>
+    <div class="contact-grid">
+      <div class="contact"><img src="assets/source-media/image1.png" alt="胡工联系方式二维码"/><b>产品详情 / 售后服务</b><span>胡工</span><strong>138 2552 8983</strong></div>
+      <div class="contact"><img src="assets/source-media/image2.png" alt="吴工联系方式二维码"/><b>技术合作 / 人才推荐</b><span>吴工</span><strong>137 3526 5683</strong></div>
+    </div>
+    <div class="legal">本文产品定位与应用信息依据TH375系列宣传资料整理。不同织物、设备及工艺条件可能产生不同效果，正式生产前建议进行实验室打样和现场验证。</div>
+  </section>
+
+  <section class="brand-ending" data-segment="12-brand-ending" aria-label="德美品牌结束页">
+    <div class="brand-ending-inner">
+      <div class="brand-ending-head">
+        <img class="brand-ending-logo" src="assets/source-media/dymatic-company-logo-ending.png" alt="DYMATIC 德美" />
+        <span class="brand-ending-no">12 / 12</span>
+      </div>
+      <div class="brand-rule" aria-hidden="true"><i></i><b></b></div>
+      <div class="brand-product"><span>德美有机硅</span><strong>TH375 SERIES</strong></div>
+      <h3>为每一种毛巾<br/><span>找到柔软与亲水的平衡</span></h3>
+      <p class="brand-ending-copy">四款亲水硅油，覆盖顺滑、软糯、均衡与蓬松四种手感方向。</p>
+      <div class="brand-ending-tags"><span>TH375E</span><span>TH375G</span><span>TH375T</span><span>TH375P</span></div>
+      <div class="cert-wrap"><img class="cert-strip" src="assets/source-media/dymatic-certification-strip.png" alt="德美认证标识组合" /></div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
+
+
